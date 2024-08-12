@@ -9,7 +9,7 @@ export function runForceGraph(
   container,
   linksData,
   nodesData,
-  nodeHoverTooltip
+  
 ) {
   const links = linksData.map((d) => Object.assign({}, d));
   const nodes = nodesData.map((d) => Object.assign({}, d));
@@ -52,8 +52,8 @@ export function runForceGraph(
 
     const dragended = (event, d) => {
       if (!event.active) simulation.alphaTarget(0);
-      d.fx = event.x; // Keep the node fixed in the dragged position
-      d.fy = event.y; // Keep the node fixed in the dragged position
+      d.fx = event.x; 
+      d.fy = event.y; 
     };
 
     return d3
@@ -117,7 +117,7 @@ export function runForceGraph(
 
   const legend = svg.append("g")
     .attr("class", "legend")
-    .attr("transform", "translate(-490,-230)"); // Adjust based on the viewBox
+    .attr("transform", "translate(-490,-230)");
 
   legend.selectAll("rect")
     .data(legendData)
