@@ -3,11 +3,25 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #11073d; /* Adjust background color as needed */
+}
+
+.header-logo {
+  width: 40px; /* Smaller size for the logo */
+  height: 40px; /* Maintain aspect ratio */
+  margin-right: 750px; /* Space between the logo and the text */
+  flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+.App-header span {
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #f0e5e5;
 }
 
 .Main {
-  padding: 20px;
+  margin-top: 20px; /* Space between header and main content */
 }

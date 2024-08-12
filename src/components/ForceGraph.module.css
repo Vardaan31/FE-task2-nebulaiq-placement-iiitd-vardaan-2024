@@ -11,7 +11,7 @@
 .tooltip {
     position: absolute;
     background: white;
-    border: 1px solid #ccc;
+    border: 1px solid #4704ff;
     padding: 5px;
     pointer-events: none;
   }

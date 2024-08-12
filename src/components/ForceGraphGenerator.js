@@ -173,7 +173,8 @@ export function runForceGraph(
         Namespace: ${d.namespace}<br>
         Clusters: ${d.clusters}<br>
         Invocations: ${d.invocations}<br>
-        Errors: ${d.errors}
+        Errors: ${d.errors}<br>
+        Type: ${d.serviceType}
       `, event.pageX, event.pageY);
     })
     .on("mouseout", removeTooltip);

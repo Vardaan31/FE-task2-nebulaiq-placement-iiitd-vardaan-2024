@@ -2,6 +2,7 @@ import React from 'react';
 import data from './data/data.json';
 import { ForceGraph } from "./components/forceGraph";
 import './App.css';
+import logo1 from './logo1.svg';
 
 function App() {
   const nodeHoverTooltip = React.useCallback((node) => {
@@ -17,7 +18,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        System Service Status
+        <img src={logo1} alt="Logo" className="header-logo" />
+        <span>System Service Status</span>
       </header>
       <section className="Main">
         <ForceGraph
