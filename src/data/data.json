@@ -1,0 +1,22 @@
+{
+    "nodes": [
+      { "id": "1", "name": "Service A", "port": 8080, "namespace": "default", "clusters": "cluster1", "invocations": 1000, "errors": 50, "serviceType": "HTTP" },
+      { "id": "2", "name": "Service B", "port": 9090, "namespace": "default", "clusters": "cluster2", "invocations": 800, "errors": 20, "serviceType": "MySQL" },
+      { "id": "3", "name": "Service C", "port": 7070, "namespace": "default", "clusters": "cluster1", "invocations": 600, "errors": 300, "serviceType": "HTTP" },
+      { "id": "4", "name": "Service D", "port": 6060, "namespace": "default", "clusters": "cluster2", "invocations": 400, "errors": 100, "serviceType": "Redis" },
+      { "id": "5", "name": "Service E", "port": 5050, "namespace": "default", "clusters": "cluster3", "invocations": 200, "errors": 200, "serviceType": "MySQL" },
+      { "id": "6", "name": "Service F", "port": 4040, "namespace": "default", "clusters": "cluster3", "invocations": 100, "errors": 90, "serviceType": "gRPC" },
+      { "id": "7", "name": "Service G", "port": 4040, "namespace": "default", "clusters": "cluster3", "invocations": 100, "errors": 90, "serviceType": "HTTP" },
+      { "id": "8", "name": "Service H", "port": 4040, "namespace": "default", "clusters": "cluster3", "invocations": 100, "errors": 90, "serviceType": "gRPC" },
+      { "id": "9", "name": "Service H", "port": 4040, "namespace": "default", "clusters": "cluster3", "invocations": 1000, "errors": 90, "serviceType": "MySQL" },
+      { "id": "10", "name": "Service H", "port": 4040, "namespace": "default", "clusters": "cluster3", "invocations": 1000, "errors": 90, "serviceType": "Redis" }
+    ],
+    "links": [
+      { "source": "1", "target": "2", "invocations": 500, "latency": 100 },
+      { "source": "3", "target": "4", "invocations": 300, "latency": 300 },
+      { "source": "5", "target": "6", "invocations": 700, "latency": 150 },
+      { "source": "7", "target": "8", "invocations": 600, "latency": 200 },
+      { "source": "9", "target": "10", "invocations": 500, "latency": 150 }
+      
+    ]
+  }
