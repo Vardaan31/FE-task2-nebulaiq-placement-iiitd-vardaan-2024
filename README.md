@@ -2,7 +2,6 @@ hello welcome to my project!!!!
 
 here is the youtube video link: https://youtu.be/LgQIVHEenO8
 
-here is video link for grafana node-graph plug-in: https://youtu.be/G5WvsbH8TtI
 
 
 
